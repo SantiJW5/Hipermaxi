@@ -4,17 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
     <title>Hipermaxi</title>
   </head>
 
@@ -45,7 +36,7 @@
               class="flex items-center gap-2 rounded-full px-4 py-2 text-[0.92rem] font-extrabold tracking-wide text-white/95 border border-white/10 bg-white/5 transition hover:-translate-y-0.5 hover:border-yellow-300/30"
             >
               <span class="text-base">💊</span>
-              <span>Ir a Farmacia</span>
+              <span>Farmacia</span>
             </a>
           </div>
 
@@ -237,20 +228,192 @@
                 </button>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
 
-            <!-- Card 5 -->
+      <!-- PRODUCTOS 2 -->
+      <section class="mx-auto w-[min(1120px,calc(100%-2rem))] mb-10">
+        <div class="rounded-[22px] border border-white/10 p-4 shadow-[0_26px_60px_rgba(0,0,0,0.55)] bg-[radial-gradient(18px_18px_at_20%_20%,rgba(255,255,255,0.08),transparent_60%),linear-gradient(180deg,rgba(14,14,18,0.72),rgba(10,10,12,0.72))]">
+          <div class="mb-4 flex items-center justify-between gap-4">
+            <h2 class="m-0 text-[1.1rem] font-black tracking-tight">Parrillada</h2>
+            <a href="" class="inline-flex items-center gap-1 font-extrabold text-yellow-300/95 hover:underline">
+              Ver más <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- Carril horizontal con snap -->
+          <div
+            class="grid grid-flow-col auto-cols-[clamp(210px,25vw,260px)] gap-4 overflow-x-auto pb-3 pr-1 scroll-smooth snap-x snap-mandatory [scrollbar-width:thin] [scrollbar-color:rgba(255,193,7,0.9)_rgba(255,255,255,0.10)]"
+          >
+            <!-- Card 1 -->
+            <article class="snap-start overflow-hidden rounded-[18px] border border-white/10 shadow-[0_22px_40px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.05)] transition hover:-translate-y-1 hover:border-yellow-300/25 bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]">
+              <div class="relative h-[150px] overflow-hidden">
+                <img src="/img/chorizo aumado cerdo.png" class="h-full w-full object-cover scale-[1.06] saturate-[1.07] contrast-[1.04]" alt="Agua Vital" />
+                <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.55))]"></div>
+              </div>
+              <div class="grid gap-2 p-4">
+                <p class="m-0 text-[0.92rem] leading-snug text-white/70">Agua Vital Sin Gas 3 L lPTM</p>
+                <p class="m-0 text-[1.05rem] font-black text-white/95">Bs. 9.00</p>
+                <button
+                  type="button"
+                  class="mt-1 rounded-[14px] px-4 py-3 font-black text-[#141414] shadow-[0_16px_32px_rgba(0,0,0,0.52)] transition hover:-translate-y-0.5 hover:brightness-105 bg-[radial-gradient(14px_14px_at_30%_30%,rgba(255,255,255,0.38),transparent_60%),linear-gradient(135deg,rgba(255,193,7,1),rgba(255,90,54,1))]"
+                >
+                  Agregar
+                </button>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="snap-start overflow-hidden rounded-[18px] border border-white/10 shadow-[0_22px_40px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.05)] transition hover:-translate-y-1 hover:border-yellow-300/25 bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]">
+              <div class="relative h-[150px] overflow-hidden">
+                <img src="/img/costilla especial.png" class="h-full w-full object-cover scale-[1.06] saturate-[1.07] contrast-[1.04]" alt="Coca Cola 3L" />
+                <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.55))]"></div>
+              </div>
+              <div class="grid gap-2 p-4">
+                <p class="m-0 text-[0.92rem] leading-snug text-white/70">Gaseosa Coca Cola Original 3 L</p>
+                <p class="m-0 text-[1.05rem] font-black text-white/95">Bs. 19.50</p>
+                <button
+                  type="button"
+                  class="mt-1 rounded-[14px] px-4 py-3 font-black text-[#141414] shadow-[0_16px_32px_rgba(0,0,0,0.52)] transition hover:-translate-y-0.5 hover:brightness-105 bg-[radial-gradient(14px_14px_at_30%_30%,rgba(255,255,255,0.38),transparent_60%),linear-gradient(135deg,rgba(255,193,7,1),rgba(255,90,54,1))]"
+                >
+                  Agregar
+                </button>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
             <article class="snap-start overflow-hidden rounded-[18px] border border-white/10 shadow-[0_22px_40px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.05)] transition hover:-translate-y-1 hover:border-yellow-300/25 bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]">
               <div class="relative h-[150px] overflow-hidden">
                 <img
-                  src="https://hipermaxi.com/tienda-api/marketfile/ImageEcommerce?hashfile=cf01ec1_577a_412c_b2df_8d4f4e837f52.jpg&co=5&size=400x400"
+                  src="img/polleria con hueso.png"
                   class="h-full w-full object-cover scale-[1.06] saturate-[1.07] contrast-[1.04]"
-                  alt="Espuma carnavalera"
+                  alt="Chips Ahoy"
                 />
                 <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.55))]"></div>
               </div>
               <div class="grid gap-2 p-4">
-                <p class="m-0 text-[0.92rem] leading-snug text-white/70">Espuma carnavalera</p>
-                <p class="m-0 text-[1.05rem] font-black text-white/95">Bs. 17.00</p>
+                <p class="m-0 text-[0.92rem] leading-snug text-white/70">Galleta Chips Ahoy 222gr</p>
+                <p class="m-0 text-[1.05rem] font-black text-white/95">Bs. 29.50</p>
+                <button
+                  type="button"
+                  class="mt-1 rounded-[14px] px-4 py-3 font-black text-[#141414] shadow-[0_16px_32px_rgba(0,0,0,0.52)] transition hover:-translate-y-0.5 hover:brightness-105 bg-[radial-gradient(14px_14px_at_30%_30%,rgba(255,255,255,0.38),transparent_60%),linear-gradient(135deg,rgba(255,193,7,1),rgba(255,90,54,1))]"
+                >
+                  Agregar
+                </button>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="snap-start overflow-hidden rounded-[18px] border border-white/10 shadow-[0_22px_40px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.05)] transition hover:-translate-y-1 hover:border-yellow-300/25 bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]">
+              <div class="relative h-[150px] overflow-hidden">
+                <img
+                  src="/img/picana espacial.png"
+                  class="h-full w-full object-cover scale-[1.06] saturate-[1.07] contrast-[1.04]"
+                  alt="Ketchup"
+                />
+                <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.55))]"></div>
+              </div>
+              <div class="grid gap-2 p-4">
+                <p class="m-0 text-[0.92rem] leading-snug text-white/70">Ketchup</p>
+                <p class="m-0 text-[1.05rem] font-black text-white/95">Bs. 29.00</p>
+                <button
+                  type="button"
+                  class="mt-1 rounded-[14px] px-4 py-3 font-black text-[#141414] shadow-[0_16px_32px_rgba(0,0,0,0.52)] transition hover:-translate-y-0.5 hover:brightness-105 bg-[radial-gradient(14px_14px_at_30%_30%,rgba(255,255,255,0.38),transparent_60%),linear-gradient(135deg,rgba(255,193,7,1),rgba(255,90,54,1))]"
+                >
+                  Agregar
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTOS 3-->
+      <section class="mx-auto w-[min(1120px,calc(100%-2rem))] mb-10">
+        <div class="rounded-[22px] border border-white/10 p-4 shadow-[0_26px_60px_rgba(0,0,0,0.55)] bg-[radial-gradient(18px_18px_at_20%_20%,rgba(255,255,255,0.08),transparent_60%),linear-gradient(180deg,rgba(14,14,18,0.72),rgba(10,10,12,0.72))]">
+          <div class="mb-4 flex items-center justify-between gap-4">
+            <h2 class="m-0 text-[1.1rem] font-black tracking-tight">Productos de Croacia</h2>
+            <a href="/hipermaxi/masvendido.html" class="inline-flex items-center gap-1 font-extrabold text-yellow-300/95 hover:underline">
+              Ver más <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- Carril horizontal con snap -->
+          <div
+            class="grid grid-flow-col auto-cols-[clamp(210px,25vw,260px)] gap-4 overflow-x-auto pb-3 pr-1 scroll-smooth snap-x snap-mandatory [scrollbar-width:thin] [scrollbar-color:rgba(255,193,7,0.9)_rgba(255,255,255,0.10)]"
+          >
+            <!-- Card 1 -->
+            <article class="snap-start overflow-hidden rounded-[18px] border border-white/10 shadow-[0_22px_40px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.05)] transition hover:-translate-y-1 hover:border-yellow-300/25 bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]">
+              <div class="relative h-[150px] overflow-hidden">
+                <img src="/img/Lino lada.png" class="h-full w-full object-cover scale-[1.06] saturate-[1.07] contrast-[1.04]" alt="Agua Vital" />
+                <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.55))]"></div>
+              </div>
+              <div class="grid gap-2 p-4">
+                <p class="m-0 text-[0.92rem] leading-snug text-white/70">Agua Vital Sin Gas 3 L lPTM</p>
+                <p class="m-0 text-[1.05rem] font-black text-white/95">Bs. 9.00</p>
+                <button
+                  type="button"
+                  class="mt-1 rounded-[14px] px-4 py-3 font-black text-[#141414] shadow-[0_16px_32px_rgba(0,0,0,0.52)] transition hover:-translate-y-0.5 hover:brightness-105 bg-[radial-gradient(14px_14px_at_30%_30%,rgba(255,255,255,0.38),transparent_60%),linear-gradient(135deg,rgba(255,193,7,1),rgba(255,90,54,1))]"
+                >
+                  Agregar
+                </button>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="snap-start overflow-hidden rounded-[18px] border border-white/10 shadow-[0_22px_40px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.05)] transition hover:-translate-y-1 hover:border-yellow-300/25 bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]">
+              <div class="relative h-[150px] overflow-hidden">
+                <img src="/img/Lino lada gold.png" class="h-full w-full object-cover scale-[1.06] saturate-[1.07] contrast-[1.04]" alt="Coca Cola 3L" />
+                <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.55))]"></div>
+              </div>
+              <div class="grid gap-2 p-4">
+                <p class="m-0 text-[0.92rem] leading-snug text-white/70">Gaseosa Coca Cola Original 3 L</p>
+                <p class="m-0 text-[1.05rem] font-black text-white/95">Bs. 19.50</p>
+                <button
+                  type="button"
+                  class="mt-1 rounded-[14px] px-4 py-3 font-black text-[#141414] shadow-[0_16px_32px_rgba(0,0,0,0.52)] transition hover:-translate-y-0.5 hover:brightness-105 bg-[radial-gradient(14px_14px_at_30%_30%,rgba(255,255,255,0.38),transparent_60%),linear-gradient(135deg,rgba(255,193,7,1),rgba(255,90,54,1))]"
+                >
+                  Agregar
+                </button>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="snap-start overflow-hidden rounded-[18px] border border-white/10 shadow-[0_22px_40px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.05)] transition hover:-translate-y-1 hover:border-yellow-300/25 bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]">
+              <div class="relative h-[150px] overflow-hidden">
+                <img
+                  src="img/pudin.png"
+                  class="h-full w-full object-cover scale-[1.06] saturate-[1.07] contrast-[1.04]"
+                  alt="Chips Ahoy"
+                />
+                <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.55))]"></div>
+              </div>
+              <div class="grid gap-2 p-4">
+                <p class="m-0 text-[0.92rem] leading-snug text-white/70">Galleta Chips Ahoy 222gr</p>
+                <p class="m-0 text-[1.05rem] font-black text-white/95">Bs. 29.50</p>
+                <button
+                  type="button"
+                  class="mt-1 rounded-[14px] px-4 py-3 font-black text-[#141414] shadow-[0_16px_32px_rgba(0,0,0,0.52)] transition hover:-translate-y-0.5 hover:brightness-105 bg-[radial-gradient(14px_14px_at_30%_30%,rgba(255,255,255,0.38),transparent_60%),linear-gradient(135deg,rgba(255,193,7,1),rgba(255,90,54,1))]"
+                >
+                  Agregar
+                </button>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="snap-start overflow-hidden rounded-[18px] border border-white/10 shadow-[0_22px_40px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.05)] transition hover:-translate-y-1 hover:border-yellow-300/25 bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]">
+              <div class="relative h-[150px] overflow-hidden">
+                <img
+                  src="/img/mermelada.png"
+                  class="h-full w-full object-cover scale-[1.06] saturate-[1.07] contrast-[1.04]"
+                  alt="Ketchup"
+                />
+                <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.55))]"></div>
+              </div>
+              <div class="grid gap-2 p-4">
+                <p class="m-0 text-[0.92rem] leading-snug text-white/70">Ketchup</p>
+                <p class="m-0 text-[1.05rem] font-black text-white/95">Bs. 29.00</p>
                 <button
                   type="button"
                   class="mt-1 rounded-[14px] px-4 py-3 font-black text-[#141414] shadow-[0_16px_32px_rgba(0,0,0,0.52)] transition hover:-translate-y-0.5 hover:brightness-105 bg-[radial-gradient(14px_14px_at_30%_30%,rgba(255,255,255,0.38),transparent_60%),linear-gradient(135deg,rgba(255,193,7,1),rgba(255,90,54,1))]"
