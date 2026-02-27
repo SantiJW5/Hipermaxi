@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Registro - HIPERMAXI</title>
+  </head>
+
+  <body
+    class="min-h-dvh text-white bg-[radial-gradient(1200px_600px_at_20%_-10%,rgba(255,193,7,0.18),transparent_60%),radial-gradient(900px_500px_at_90%_0%,rgba(255,90,54,0.14),transparent_55%),radial-gradient(800px_500px_at_50%_110%,rgba(120,180,255,0.10),transparent_60%),linear-gradient(180deg,#0a0b0f,#07070a_45%,#050507)]"
+  >
+    <!-- NAVBAR -->
+    <header
+      class="sticky top-0 z-50 backdrop-blur-xl bg-[linear-gradient(180deg,rgba(14,14,18,0.72),rgba(14,14,18,0.38)),radial-gradient(900px_220px_at_30%_0%,rgba(255,193,7,0.18),transparent_60%)] border-b border-white/10"
+    >
+      <nav class="mx-auto w-[min(1800px,calc(100%-1rem))] py-3">
+        <div class="grid items-center gap-3 lg:grid-cols-[1fr_1.2fr_auto]">
+          <!-- Logo -->
+          <a href="#" class="inline-flex items-center gap-3 text-white no-underline">
+            <span class="text-[0.95rem] font-black tracking-[0.22em] uppercase text-white/95"
+              >HIPERMAXI</span
+            >
+          </a>
+
+          <!-- botones -->
+          <div class="flex items-center gap-3">
+            <a
+              href="/hipermaxiopt.html"
+              class="flex items-center gap-2 rounded-full px-4 py-2 text-[0.92rem] font-extrabold tracking-wide text-white/95 border border-white/10 bg-white/5 transition hover:-translate-y-0.5 hover:border-yellow-300/30"
+            >
+              <span class="text-base">🛒</span>
+              <span>Supermercado</span>
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 rounded-full px-4 py-2 text-[0.92rem] font-extrabold tracking-wide text-[#151515] border border-white/10 shadow-[0_12px_26px_rgba(0,0,0,0.42)] bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.45),transparent_60%),linear-gradient(135deg,rgba(255,193,7,1),rgba(255,140,60,1))] transition hover:-translate-y-0.5 hover:border-yellow-300/30"
+            >
+              <span class="text-base">📝</span>
+              <span>Registro</span>
+            </a>
+          </div>
+
+          <!-- acciones -->
+          <div class="flex items-center justify-start gap-2 lg:justify-end">
+            <a
+              href="#"
+              class="inline-flex items-center gap-2 rounded-[14px] px-4 py-3 font-extrabold tracking-wide text-white/95 border border-white/15 bg-white/5 transition hover:-translate-y-0.5 hover:border-yellow-300/30"
+            >
+              <i class="bi bi-person" aria-hidden="true"></i>
+              <span class="hidden sm:inline">Iniciar sesión</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-10">
+      <section class="mx-auto w-[min(980px,calc(100%-2rem))]">
+        <div
+          class="rounded-[22px] border border-white/10 p-5 sm:p-7 shadow-[0_26px_60px_rgba(0,0,0,0.55)] bg-[radial-gradient(18px_18px_at_20%_20%,rgba(255,255,255,0.08),transparent_60%),linear-gradient(180deg,rgba(14,14,18,0.72),rgba(10,10,12,0.72))]"
+        >
+          <div class="grid gap-6 lg:grid-cols-[1fr_1.2fr] lg:items-start">
+            <!-- panel info -->
+            <div
+              class="rounded-[18px] border border-white/10 p-5 shadow-[0_22px_40px_rgba(0,0,0,0.45),inset_0_0_0_1px_rgba(255,255,255,0.05)] bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]"
+            >
+              <p class="m-0 text-[0.78rem] font-black tracking-[0.22em] uppercase text-white/70">
+                Bienvenido
+              </p>
+              <h1 class="mt-2 text-[1.55rem] sm:text-[1.8rem] font-black tracking-tight">
+                Crea tu cuenta
+              </h1>
+              <p class="mt-2 text-white/70 leading-relaxed">
+                Si ya tienes una cuenta creada/registrada presiona el boton de Iniciar Sesion
+              </p>
+
+              <div class="mt-5 grid gap-3">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="h-10 w-10 rounded-[14px] grid place-items-center border border-white/10 bg-white/5"
+                    ><i class="bi bi-shield-check" aria-hidden="true"></i
+                  ></span>
+                  <div>
+                    <p class="m-0 font-black text-[0.95rem]">Datos seguros</p>
+                    <p class="m-0 text-white/65 text-[0.9rem]">Campos con validación básica.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span
+                    class="h-10 w-10 rounded-[14px] grid place-items-center border border-white/10 bg-white/5"
+                    ><i class="bi bi-lightning-charge" aria-hidden="true"></i
+                  ></span>
+                  <div>
+                    <p class="m-0 font-black text-[0.95rem]">Registro rápido</p>
+                    <p class="m-0 text-white/65 text-[0.9rem]">En menos de 1 minuto.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- formulario -->
+            <form
+              action="#"
+              method="post"
+              class="rounded-[18px] border border-white/10 p-5 sm:p-6 shadow-[0_22px_40px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.05)] bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]"
+            >
+              <div class="flex items-center justify-between gap-3">
+                <h2 class="m-0 text-[1.15rem] font-black tracking-tight">Formulario de registro</h2>
+                <span
+                  class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-[0.78rem] font-extrabold tracking-wide border border-white/15 bg-white/5 text-white/80"
+                >
+                  <i class="bi bi-person-plus" aria-hidden="true"></i>
+                  Nuevo usuario
+                </span>
+              </div>
+
+              <div class="mt-5 grid gap-4 sm:grid-cols-2">
+                <!-- Nombres -->
+                <label class="grid gap-2">
+                  <span class="text-[0.9rem] font-black text-white/90">Nombres</span>
+                  <div
+                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                  >
+                    <i class="bi bi-card-text text-white/70" aria-hidden="true"></i>
+                    <input
+                      name="nombres"
+                      type="text"
+                      required
+                      autocomplete="given-name"
+                      placeholder="Ej: Joe"
+                      class="min-w-0 bg-transparent outline-none text-white/95 placeholder:text-white/45 font-semibold"
+                    />
+                  </div>
+                </label>
+
+                <!-- Apellidos -->
+                <label class="grid gap-2">
+                  <span class="text-[0.9rem] font-black text-white/90">Apellidos</span>
+                  <div
+                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                  >
+                    <i class="bi bi-card-text text-white/70" aria-hidden="true"></i>
+                    <input
+                      name="apellidos"
+                      type="text"
+                      required
+                      autocomplete="family-name"
+                      placeholder="Ej: Avendaño Via"
+                      class="min-w-0 bg-transparent outline-none text-white/95 placeholder:text-white/45 font-semibold"
+                    />
+                  </div>
+                </label>
+
+                <!-- Edad -->
+                <label class="grid gap-2">
+                  <span class="text-[0.9rem] font-black text-white/90">Edad</span>
+                  <div
+                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                  >
+                    <i class="bi bi-calendar2-week text-white/70" aria-hidden="true"></i>
+                    <input
+                      name="edad"
+                      type="number"
+                      required
+                      min="1"
+                      max="120"
+                      inputmode="numeric"
+                      placeholder="Ej: 21"
+                      class="min-w-0 bg-transparent outline-none text-white/95 placeholder:text-white/45 font-semibold"
+                    />
+                  </div>
+                  <span class="text-[0.78rem] text-white/55">Debe estar entre 1 y 122.</span>
+                </label>
+
+                <!-- Carnet -->
+                <label class="grid gap-2">
+                  <span class="text-[0.9rem] font-black text-white/90">Carnet de identidad</span>
+                  <div
+                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                  >
+                    <i class="bi bi-person-vcard text-white/70" aria-hidden="true"></i>
+                    <input
+                      name="carnet"
+                      type="text"
+                      required
+                      inputmode="numeric"
+                      placeholder="Ej: 12345678"
+                      class="min-w-0 bg-transparent outline-none text-white/95 placeholder:text-white/45 font-semibold"
+                    />
+                  </div>
+                  <span class="text-[0.78rem] text-white/55">Solo números (si aplica en tu caso).</span>
+                </label>
+
+                <!-- Correo -->
+                <label class="grid gap-2 sm:col-span-2">
+                  <span class="text-[0.9rem] font-black text-white/90">Correo electrónico</span>
+                  <div
+                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                  >
+                    <i class="bi bi-envelope text-white/70" aria-hidden="true"></i>
+                    <input
+                      name="email"
+                      type="email"
+                      required
+                      autocomplete="email"
+                      placeholder="Ej: santidbd5@gmail.com"
+                      class="min-w-0 bg-transparent outline-none text-white/95 placeholder:text-white/45 font-semibold"
+                    />
+                  </div>
+                </label>
+
+                <!-- Teléfono -->
+                <label class="grid gap-2 sm:col-span-2">
+                  <span class="text-[0.9rem] font-black text-white/90">Número de teléfono</span>
+                  <div
+                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                  >
+                    <i class="bi bi-telephone text-white/70" aria-hidden="true"></i>
+                    <input
+                      name="telefono"
+                      type="tel"
+                      required
+                      autocomplete="tel"
+                      inputmode="tel"
+                      placeholder="Ej: +591 60360806"
+                      class="min-w-0 bg-transparent outline-none text-white/95 placeholder:text-white/45 font-semibold"
+                    />
+                  </div>
+                  <span class="text-[0.78rem] text-white/55">Incluye prefijo si deseas (ej: +591).</span>
+                </label>
+              </div>
+
+              <div class="mt-6 grid gap-3">
+                <label class="flex items-start gap-3 text-white/75 text-[0.9rem]">
+                  <input type="checkbox" required class="mt-1 h-4 w-4 rounded border-white/30 bg-white/5 accent-yellow-400"/>
+                  <span>Confirmo venderle el alma al diablo por no leer los terminos y condiciones</span>
+                </label>
+
+                <button
+                  type="submit"
+                  class="rounded-[14px] px-5 py-3 font-black text-[#141414] shadow-[0_16px_32px_rgba(0,0,0,0.52)] transition hover:-translate-y-0.5 hover:brightness-105 bg-[radial-gradient(14px_14px_at_30%_30%,rgba(255,255,255,0.38),transparent_60%),linear-gradient(135deg,rgba(255,193,7,1),rgba(255,90,54,1))]"
+                >
+                  <i class="bi bi-check2-circle me-1" aria-hidden="true"></i>
+                  Registrarme
+                </button>
+
+                <p class="m-0 text-center text-white/60 text-[0.85rem]">
+                  ¿Ya tienes cuenta?
+                  <a href="#" class="font-black text-white/90 hover:underline">Inicia sesión</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
