@@ -11,22 +11,22 @@
     <title>Registro - HIPERMAXI</title>
   </head>
 
-  <body class="min-h-dvh text-white bg-[#F37515]">
+  <body class="min-h-dvh text-white bg-[#F67122]">
     <!-- NAVBAR -->
     <header
       class="sticky top-0 z-50 backdrop-blur-xl bg-[linear-gradient(180deg,rgba(14,14,18,0.72),rgba(14,14,18,0.38)),radial-gradient(900px_220px_at_30%_0%,rgba(255,193,7,0.18),transparent_60%)] border-b border-white/10"
     >
       <nav class="mx-auto w-[min(1800px,calc(100%-1rem))] py-3">
-        <div class="grid items-center gap-3 lg:grid-cols-[1fr_1.2fr_auto]">
+        <div class="grid justify-items-center gap-3 lg:grid-cols-[1fr_1.2fr_auto] lg:items-center lg:justify-items-stretch">
           <!-- Logo -->
-          <a href="#" class="inline-flex items-center gap-3 text-white no-underline">
+          <a href="/hipermaxiopt.html" class="inline-flex items-center justify-center gap-3 text-white no-underline lg:justify-self-start">
             <span class="text-[0.95rem] font-black tracking-[0.22em] uppercase text-white/95"
               >HIPERMAXI</span
             >
           </a>
 
           <!-- botones -->
-          <div class="flex items-center gap-3">
+          <div class="flex flex-wrap items-center justify-center gap-3">
             <a
               href="/hipermaxiopt.html"
               class="flex items-center gap-2 rounded-full px-4 py-2 text-[0.92rem] font-extrabold tracking-wide text-white/95 border border-white/10 bg-white/5 transition hover:-translate-y-0.5 hover:border-yellow-300/30"
@@ -45,7 +45,7 @@
           </div>
 
           <!-- acciones -->
-          <div class="flex items-center justify-start gap-2 lg:justify-end">
+          <div class="flex flex-wrap items-center justify-center gap-2 lg:justify-end">
             <a
               href="#"
               class="inline-flex items-center gap-2 rounded-[14px] px-4 py-3 font-extrabold tracking-wide text-white/95 border border-white/15 bg-white/5 transition hover:-translate-y-0.5 hover:border-yellow-300/30"
@@ -64,60 +64,22 @@
     </header>
 
     <main class="py-10">
-      <section class="mx-auto w-[min(980px,calc(100%-2rem))]">
+      <section class="mx-auto w-[min(700px,calc(100%-2rem))]">
         <div
           class="rounded-[22px] border border-white/10 p-5 sm:p-7 shadow-[0_26px_60px_rgba(0,0,0,0.55)] bg-[radial-gradient(18px_18px_at_20%_20%,rgba(255,255,255,0.08),transparent_60%),linear-gradient(180deg,rgba(14,14,18,0.72),rgba(10,10,12,0.72))]"
         >
-          <div class="grid gap-6 lg:grid-cols-[1fr_1.2fr] lg:items-start">
-            <!-- panel info -->
-            <div
-              class="rounded-[18px] border border-white/10 p-5 shadow-[0_22px_40px_rgba(0,0,0,0.45),inset_0_0_0_1px_rgba(255,255,255,0.05)] bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]"
-            >
-              <p class="m-0 text-[0.78rem] font-black tracking-[0.22em] uppercase text-white/70">
-                Bienvenido
-              </p>
-              <h1 class="mt-2 text-[1.55rem] sm:text-[1.8rem] font-black tracking-tight">
-                Crea tu cuenta
-              </h1>
-              <p class="mt-2 text-white/70 leading-relaxed">
-                Si ya tienes una cuenta creada/registrada presiona el boton de Iniciar Sesion
-              </p>
-
-              <div class="mt-5 grid gap-3">
-                <div class="flex items-center gap-3">
-                  <span
-                    class="h-10 w-10 rounded-[14px] grid place-items-center border border-white/10 bg-white/5"
-                    ><i class="bi bi-shield-check" aria-hidden="true"></i
-                  ></span>
-                  <div>
-                    <p class="m-0 font-black text-[0.95rem]">Datos seguros</p>
-                    <p class="m-0 text-white/65 text-[0.9rem]">Campos con validación básica.</p>
-                  </div>
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <span
-                    class="h-10 w-10 rounded-[14px] grid place-items-center border border-white/10 bg-white/5"
-                    ><i class="bi bi-lightning-charge" aria-hidden="true"></i
-                  ></span>
-                  <div>
-                    <p class="m-0 font-black text-[0.95rem]">Registro rápido</p>
-                    <p class="m-0 text-white/65 text-[0.9rem]">En menos de 1 minuto.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            
             <!-- formulario -->
             <form
               action="#"
               method="post"
-              class="rounded-[18px] border border-white/10 p-5 sm:p-6 shadow-[0_22px_40px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.05)] bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]"
+              onsubmit="return validarFormulario()"
+              class="w-full rounded-[18px] border border-white/10 p-5 sm:p-6 shadow-[0_22px_40px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.05)] bg-[radial-gradient(14px_14px_at_25%_20%,rgba(255,255,255,0.10),transparent_60%),linear-gradient(180deg,rgba(18,18,22,0.85),rgba(12,12,14,0.85))]"
             >
               <div class="flex items-center justify-between gap-3">
                 <h2 class="m-0 text-[1.15rem] font-black tracking-tight">Formulario de registro</h2>
                 <span
-                  class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-[0.78rem] font-extrabold tracking-wide border border-white/15 bg-white/5 text-white/80"
+                  class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[0.78rem] font-extrabold tracking-wide text-white/80"
                 >
                   <i class="bi bi-person-plus" aria-hidden="true"></i>
                   Nuevo usuario
@@ -129,56 +91,62 @@
                 <label class="grid gap-2">
                   <span class="text-[0.9rem] font-black text-white/90">Nombres</span>
                   <div
-                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                    class="grid grid-cols-1 items-center rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] transition focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
                   >
-                    <i class="bi bi-card-text text-white/70" aria-hidden="true"></i>
                     <input
+                      required
                       name="nombres"
                       type="text"
-                      required
+                      id="nombres"
+                      onblur="validarNombres()"
                       autocomplete="given-name"
                       placeholder="Ej: Joe"
-                      class="min-w-0 bg-transparent outline-none text-white/95 placeholder:text-white/45 font-semibold"
+                      class="w-full min-w-0 bg-transparent font-semibold text-white/95 outline-none placeholder:text-white/45"
                     />
                   </div>
+                  <span id="errorNombres" class="min-h-[1.1rem] text-[0.78rem] leading-tight text-red-400"></span>
                 </label>
 
                 <!-- Apellidos -->
                 <label class="grid gap-2">
                   <span class="text-[0.9rem] font-black text-white/90">Apellidos</span>
                   <div
-                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] transition focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
                   >
                     <i class="bi bi-card-text text-white/70" aria-hidden="true"></i>
                     <input
+                      required
                       name="apellidos"
                       type="text"
-                      required
+                      id="apellidos"
+                      onblur="validarApellidos()"
                       autocomplete="family-name"
                       placeholder="Ej: Avendaño Via"
-                      class="min-w-0 bg-transparent outline-none text-white/95 placeholder:text-white/45 font-semibold"
+                      class="w-full min-w-0 bg-transparent font-semibold text-white/95 outline-none placeholder:text-white/45"
                     />
                   </div>
+                  <span id="errorApellidos" class="min-h-[1.1rem] text-[0.78rem] leading-tight text-red-400"></span>
                 </label>
 
                 <!-- Edad -->
                 <label class="grid gap-2">
                   <span class="text-[0.9rem] font-black text-white/90">Edad</span>
                   <div
-                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] transition focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
                   >
                     <i class="bi bi-calendar2-week text-white/70" aria-hidden="true"></i>
                     <input
-                      name="edad"
-                      type="number"
                       required
-                      min="1"
-                      max="120"
+                      name="edad"
+                      type="text"
+                      id="edad"
+                      onblur="validarEdad()"
                       inputmode="numeric"
                       placeholder="Ej: 21"
-                      class="min-w-0 bg-transparent outline-none text-white/95 placeholder:text-white/45 font-semibold"
+                      class="w-full min-w-0 bg-transparent font-semibold text-white/95 outline-none placeholder:text-white/45"
                     />
                   </div>
+                  <span id="errorEdad" class="min-h-[1.1rem] text-[0.78rem] leading-tight text-red-400"></span>
                   <span class="text-[0.78rem] text-white/55">Debe estar entre 1 y 122.</span>
                 </label>
 
@@ -186,75 +154,121 @@
                 <label class="grid gap-2">
                   <span class="text-[0.9rem] font-black text-white/90">Carnet de identidad</span>
                   <div
-                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] transition focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
                   >
                     <i class="bi bi-person-vcard text-white/70" aria-hidden="true"></i>
                     <input
-                      name="carnet"
-                      type="text"
                       required
-                      inputmode="numeric"
-                      placeholder="Ej: 12345678"
-                      class="min-w-0 bg-transparent outline-none text-white/95 placeholder:text-white/45 font-semibold"
+                      name="carnet"
+                      id="carnet"
+                      type="text"
+                      onblur="validarCarnet()"
+                      placeholder="Ej: 14580255"
+                      class="w-full min-w-0 bg-transparent font-semibold text-white/95 outline-none placeholder:text-white/45"
                     />
                   </div>
-                  <span class="text-[0.78rem] text-white/55">Solo números (si aplica en tu caso).</span>
+                  <span id="errorCarnet" class="min-h-[1.1rem] text-[0.78rem] leading-tight text-red-400"></span>
                 </label>
 
                 <!-- Correo -->
                 <label class="grid gap-2 sm:col-span-2">
                   <span class="text-[0.9rem] font-black text-white/90">Correo electrónico</span>
                   <div
-                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] transition focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
                   >
                     <i class="bi bi-envelope text-white/70" aria-hidden="true"></i>
                     <input
-                      name="email"
-                      type="email"
                       required
+                      name="email"
+                      type="text"
+                      id="email"
+                      onblur="validarEmail()"
                       autocomplete="email"
                       placeholder="Ej: santidbd5@gmail.com"
-                      class="min-w-0 bg-transparent outline-none text-white/95 placeholder:text-white/45 font-semibold"
+                      class="w-full min-w-0 bg-transparent font-semibold text-white/95 outline-none placeholder:text-white/45"
                     />
                   </div>
+                  <span id="errorEmail" class="min-h-[1.1rem] text-[0.78rem] leading-tight text-red-400"></span>
                 </label>
 
                 <!-- Telefono -->
                 <label class="grid gap-2 sm:col-span-2">
                   <span class="text-[0.9rem] font-black text-white/90">Número de teléfono</span>
                   <div
-                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                    class="grid grid-cols-[auto_1fr] items-center gap-3 rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] transition focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
                   >
                     <i class="bi bi-telephone text-white/70" aria-hidden="true"></i>
                     <input
-                      name="telefono"
-                      type="tel"
                       required
+                      name="telefono"
+                      type="text"
+                      id="telefono"
+                      onblur="validarTelefono()"
                       autocomplete="tel"
                       inputmode="tel"
                       placeholder="Ej: +591 60360806"
-                      class="min-w-0 bg-transparent outline-none text-white/95 placeholder:text-white/45 font-semibold"
+                      class="w-full min-w-0 bg-transparent font-semibold text-white/95 outline-none placeholder:text-white/45"
                     />
                   </div>
-                  <span class="text-[0.78rem] text-white/55">Incluye prefijo si deseas (ej: +591).</span>
+                  <span id="errorTelefono" class="min-h-[1.1rem] text-[0.78rem] leading-tight text-red-400"></span>
+                </label>
+
+                <!-- Fecha de nacimiento -->
+                <label class="grid gap-2 sm:col-span-2">
+                  <span class="text-[0.9rem] font-black text-white/90">Fecha de nacimiento</span>
+                  <div
+                    class="rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] transition focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                  >
+                    <input
+                      name="fecha"
+                      type="text"
+                      id="fecha"
+                      onblur="validarFecha()"
+                      placeholder="Ej: 28/06/2004"
+                      class="w-full min-w-0 bg-transparent font-semibold text-white/95 outline-none placeholder:text-white/45"
+                    />
+                  </div>
+                  <span id="errorFecha" class="min-h-[1.1rem] text-[0.78rem] leading-tight text-red-400"></span>
+                </label>
+
+                <!-- Password -->
+                <label class="grid gap-2 sm:col-span-2">
+                  <span class="text-[0.9rem] font-black text-white/90">Contraseña</span>
+                  <div
+                    class="rounded-[14px] border border-white/15 bg-white/5 px-4 py-3 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] transition focus-within:border-yellow-300/35 focus-within:shadow-[0_0_0_4px_rgba(255,193,7,0.10),inset_0_0_0_1px_rgba(255,255,255,0.07)]"
+                  >
+                    <input
+                      required
+                      name="password"
+                      type="password"
+                      id="password"
+                      onblur="validarPassword()"
+                      placeholder="Ingrese contraseña"
+                      class="w-full min-w-0 bg-transparent font-semibold text-white/95 outline-none placeholder:text-white/45"
+                    />
+                  </div>
+                  <span id="errorPassword" class="min-h-[1.1rem] text-[0.78rem] leading-tight text-red-400"></span>
                 </label>
               </div>
 
               <div class="mt-6 grid gap-3">
-                <label class="flex items-start gap-3 text-white/75 text-[0.9rem]">
-                  <input type="checkbox" required class="mt-1 h-4 w-4 rounded border-white/30 bg-white/5 accent-yellow-400"/>
+                <label class="flex items-start gap-3 text-[0.9rem] text-white/75">
+                  <input
+                    type="checkbox"
+                    class="mt-1 h-4 w-4 rounded border-white/30 bg-white/5 accent-yellow-400"
+                  />
                   <span>Confirmo venderle el alma al diablo por no leer los terminos y condiciones</span>
                 </label>
 
                 <button
                   type="submit"
-                  class="rounded-[14px] px-5 py-3 font-black text-[#141414] shadow-[0_16px_32px_rgba(0,0,0,0.52)] transition hover:-translate-y-0.5 hover:brightness-105 bg-[radial-gradient(14px_14px_at_30%_30%,rgba(255,255,255,0.38),transparent_60%),linear-gradient(135deg,rgba(255,193,7,1),rgba(255,90,54,1))]"
+                  class="rounded-[14px] bg-[radial-gradient(14px_14px_at_30%_30%,rgba(255,255,255,0.38),transparent_60%),linear-gradient(135deg,rgba(255,193,7,1),rgba(255,90,54,1))] px-5 py-3 font-black text-[#141414] shadow-[0_16px_32px_rgba(0,0,0,0.52)] transition hover:-translate-y-0.5 hover:brightness-105"
                 >
                   <i class="bi bi-check2-circle me-1" aria-hidden="true"></i>
                   Registrarme
                 </button>
 
-                <p class="m-0 text-center text-white/60 text-[0.85rem]">
+                <p class="m-0 text-center text-[0.85rem] text-white/60">
                   ¿Ya tienes cuenta?
                   <a href="#" class="font-black text-white/90 hover:underline">Inicia sesión</a>
                 </p>
@@ -272,7 +286,213 @@
             } else {
                 document.body.style.backgroundColor = 'black';
             }
-    }
+      }
+    </script>
+
+    <script>
+      function validarNombres() {
+          const nombres = document.getElementById('nombres').value.trim();
+          const regex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+          const errorElement = document.getElementById('errorNombres');
+
+          if (nombres === '') {
+              errorElement.textContent = 'Ingrese sus nombres';
+              return false;
+          } else if (!regex.test(nombres)) {
+              errorElement.textContent = 'Los nombres solo deben contener letras';
+              return false;
+          } else if (nombres.length < 2) {
+              errorElement.textContent = 'Los nombres son muy cortos';
+              return false;
+          } else {
+              errorElement.textContent = '';
+              return true;
+          }
+      }
+
+      function validarApellidos() {
+          const apellidos = document.getElementById('apellidos').value.trim();
+          const regex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+          const errorElement = document.getElementById('errorApellidos');
+
+          if (apellidos === '') {
+              errorElement.textContent = 'Ingrese sus apellidos';
+              return false;
+          } else if (!regex.test(apellidos)) {
+              errorElement.textContent = 'Los apellidos solo deben contener letras';
+              return false;
+          } else if (apellidos.length < 2) {
+              errorElement.textContent = 'Los apellidos son muy cortos';
+              return false;
+          } else {
+              errorElement.textContent = '';
+              return true;
+          }
+      }
+
+      function validarEdad() {
+          const edad = document.getElementById('edad').value.trim();
+          const regex = /^\d+$/;
+          const errorElement = document.getElementById('errorEdad');
+
+          if (edad === '') {
+              errorElement.textContent = 'Ingrese su edad';
+              return false;
+          } else if (!regex.test(edad)) {
+              errorElement.textContent = 'La edad solo debe contener números';
+              return false;
+          } else if (parseInt(edad) < 1 || parseInt(edad) > 122) {
+              errorElement.textContent = 'La edad debe estar entre 1 y 122';
+              return false;
+          } else {
+              errorElement.textContent = '';
+              return true;
+          }
+      }
+
+      function validarCarnet() {
+          const carnet = document.getElementById('carnet').value.trim();
+          const regex = /^\d{5,12}$/;
+          const errorElement = document.getElementById('errorCarnet');
+
+          if (carnet === '') {
+              errorElement.textContent = 'Ingrese su carnet';
+              return false;
+          } else if (!regex.test(carnet)) {
+              errorElement.textContent = 'El carnet debe tener solo números';
+              return false;
+          } else {
+              errorElement.textContent = '';
+              return true;
+          }
+      }
+
+      function validarEmail() {
+          const email = document.getElementById('email').value.trim();
+          const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          const errorElement = document.getElementById('errorEmail');
+
+          if (email === '') {
+              errorElement.textContent = 'Ingrese su correo electrónico';
+              return false;
+          } else if (!regex.test(email)) {
+              errorElement.textContent = 'Email inválido';
+              return false;
+          } else {
+              errorElement.textContent = '';
+              return true;
+          }
+      }
+
+      function validarTelefono() {
+          const telefono = document.getElementById('telefono').value.trim();
+          const regex = /^\+?\d{7,15}$/;
+          const telefonoLimpio = telefono.replace(/\s+/g, '');
+          const errorElement = document.getElementById('errorTelefono');
+
+          if (telefono === '') {
+              errorElement.textContent = 'Ingrese su número de teléfono';
+              return false;
+          } else if (!regex.test(telefonoLimpio)) {
+              errorElement.textContent = 'Número de teléfono inválido';
+              return false;
+          } else {
+              errorElement.textContent = '';
+              return true;
+          }
+      }
+
+      function validarFecha() {
+          const fecha = document.getElementById('fecha').value.trim();
+          const regex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/;
+          const errorElement = document.getElementById('errorFecha');
+
+          if (fecha === '') {
+              errorElement.textContent = 'Ingrese su fecha de nacimiento';
+              return false;
+          } else if (!regex.test(fecha)) {
+              errorElement.textContent = 'La fecha debe tener formato dd/mm/aaaa';
+              return false;
+          } else {
+              errorElement.textContent = '';
+              return true;
+          }
+      }
+
+      function validarPassword() {
+        const password = document.getElementById('password').value;
+        const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+        const errorElement = document.getElementById('errorPassword');
+
+        if (regex.test(password)) {
+            errorElement.textContent = '';
+            return true;
+        } else {
+            errorElement.textContent = 'La contraseña debe tener 8+ caracteres, mayúscula, minúscula y número';
+            return false;
+        }
+      }
+
+      function validarFormulario() {
+        const esValido =
+            validarNombres() &&
+            validarApellidos() &&
+            validarEdad() &&
+            validarCarnet() &&
+            validarEmail() &&
+            validarTelefono() &&
+            validarFecha() &&
+            validarPassword();
+
+        if (esValido) {
+            alert('Formulario válido. Enviando datos...');
+            return true;
+        } else {
+            return false;
+        }
+      }
+
+      /*REGISTRO*/
+      document.addEventListener("DOMContentLoaded", function () {
+        const botonRegistrar = document.querySelector('button[type="submit"]');
+
+        const campos = [
+          document.getElementById("nombres"),
+          document.getElementById("apellidos"),
+          document.getElementById("edad"),
+          document.getElementById("carnet"),
+          document.getElementById("email"),
+          document.getElementById("telefono"),
+          document.getElementById("fecha"),
+          document.getElementById("password")
+        ];
+
+        botonRegistrar.disabled = true;
+        botonRegistrar.style.opacity = "0.6";
+        botonRegistrar.style.cursor = "not-allowed";
+
+        function verificarCampos() {
+          let completos = true;
+
+          campos.forEach(campo => {
+            if (!campo || campo.value.trim() === "") {
+              completos = false;
+            }
+          });
+
+          botonRegistrar.disabled = !completos;
+          botonRegistrar.style.opacity = completos ? "1" : "0.6";
+          botonRegistrar.style.cursor = completos ? "pointer" : "not-allowed";
+        }
+
+        campos.forEach(campo => {
+          if (campo) {
+            campo.addEventListener("input", verificarCampos);
+          }
+        });
+
+        verificarCampos();
+      });
     </script>
   </body>
 </html>

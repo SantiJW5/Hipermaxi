@@ -8,7 +8,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-
+    <link rel="stylesheet" href="/arriba.css">
+    <link rel="stylesheet" href="/revelar.css">
     <title>Lo mas vendido</title>
   </head>
 
@@ -18,7 +19,7 @@
       <nav class="mx-auto w-[min(1800px,calc(100%-1rem))] py-3">
         <div class="grid items-center gap-3 lg:grid-cols-[1fr_1.2fr_1.6fr_auto]">
           <!-- Logo -->
-          <a href="#" class="inline-flex items-center gap-3 text-white no-underline">
+          <a href="/hipermaxiopt.html" class="inline-flex items-center gap-3 text-white no-underline">
             <span class="text-[0.95rem] font-black tracking-[0.22em] uppercase text-white/95 w-100">HIPERMAXI</span>
           </a>
 
@@ -188,7 +189,7 @@
       <!--PRODUCTOS 2-->
 
          <!-- PRODUCTOS -->
-      <section class="mx-auto w-[min(1120px,calc(100%-2rem))] mb-3">
+      <section class="mx-auto w-[min(1120px,calc(100%-2rem))] mb-3 reveal">
         <div class="rounded-[22px] border border-white/10 p-4 shadow-[0_26px_60px_rgba(0,0,0,0.55)] bg-[radial-gradient(18px_18px_at_20%_20%,rgba(255,255,255,0.08),transparent_60%),linear-gradient(180deg,rgba(14,14,18,0.72),rgba(10,10,12,0.72))]">
           <div class="mb-4 flex items-center justify-between gap-4"></div>
 
@@ -282,7 +283,7 @@
         <!--PRODUCTOS 3-->
 
          <!-- PRODUCTOS -->
-      <section class="mx-auto w-[min(1120px,calc(100%-2rem))] mb-10">
+      <section class="mx-auto w-[min(1120px,calc(100%-2rem))] mb-10 reveal">
         <div class="rounded-[22px] border border-white/10 p-4 shadow-[0_26px_60px_rgba(0,0,0,0.55)] bg-[radial-gradient(18px_18px_at_20%_20%,rgba(255,255,255,0.08),transparent_60%),linear-gradient(180deg,rgba(14,14,18,0.72),rgba(10,10,12,0.72))]">
           <div class="mb-4 flex items-center justify-between gap-4"></div>
 
@@ -374,7 +375,7 @@
       </section>
 
       <!--FOOTER-->
-      <footer class="mt-10 text-white bg-[linear-gradient(180deg,#9f3f0f,#1f0f0f)]">
+      <footer class="mt-10 text-white bg-[linear-gradient(180deg,#9f3f0f,#1f0f0f)] reveal">
         <div class="mx-auto w-[min(1200px,calc(100%-2rem))] py-10 grid gap-10 md:grid-cols-2 lg:grid-cols-3 items-start">
           <!-- Col 1 -->
           <div>
@@ -481,6 +482,7 @@
           </p>
         </div>
       </footer>
+      <span class="ir-arriba"><img src="/up.png" alt="" style="filter: invert(1);"></span>
     </main>
     <script>
       function fondo() {
@@ -490,6 +492,22 @@
                 document.body.style.backgroundColor = 'black';
             }
     }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 200) {
+                $('.ir-arriba').fadeIn();
+            } else {
+                $('.ir-arriba').fadeOut();
+            }
+        });
+
+        $('.ir-arriba').click(function(){
+            $('html, body').animate({
+                scrollTop: 0
+            }, 600);
+        });
     </script>
   </body>
 </html>

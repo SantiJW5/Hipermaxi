@@ -1,0 +1,24 @@
+.ir-arriba {
+            width: 55px;
+            height: 55px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 10px;
+            background:#ff6629;
+            color:#fff;
+            font-size:22px;
+            cursor:pointer;
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            border-radius:50%;
+            z-index:5555;
+            transition:.3s ease;
+            display:none;
+            box-shadow: 0 0 5px black;
+            }
+
+        .ir-arriba:hover {
+            background:#ac0505;
+        }
